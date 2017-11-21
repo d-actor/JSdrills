@@ -101,7 +101,7 @@ console.log(factorial)
 
 // ** fibonacci
 
-var fib = [1,1,2]
+var fib = [1,1]
 
 function fibonacci(num){
   while( num > fib.length-1 ){
