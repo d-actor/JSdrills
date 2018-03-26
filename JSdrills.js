@@ -100,14 +100,20 @@ for (i = val ; i > 0 ; i--){
 console.log(factorial)
 
 // ** fibonacci
+let a = 0;
+let b = 1;
 
-var fib = [1,1]
+console.log(a)
+console.log(b)
 
-function fibonacci(num){
-  while( num > fib.length-1 ){
-    fib.push(fib[fib.length - 1] + fib[fib.length -2 ])
-  };
-  console.log(fib[fib.length - 1])
-};
+fib = (x) => {
+  c = a + b;
+  console.log(c)
+  if( c <= x ){
+    a = b
+    b = c
+    fib(x);
+  }
+}
 
-fibonacci(5)
+fib(100000)
